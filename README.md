@@ -65,6 +65,12 @@ This tool requires the following capabilities:
 
 ## Development
 
+### Setup
+
+This template requires TypeScript and uses ES modules. Make sure you have:
+- Node.js 16 or higher
+- npm or yarn
+
 ### Building from Source
 
 ```bash
@@ -75,8 +81,20 @@ git clone https://github.com/your-username/your-tool
 cd your-tool
 npm install
 
-# Build
+# Build (TypeScript compilation)
 npm run build
+```
+
+### Project Structure
+
+```
+your-tool/
+├── src/
+│   └── index.ts      # Main tool implementation
+├── dist/             # Built output (generated)
+├── package.json      # Project metadata
+├── tsconfig.json     # TypeScript configuration
+└── README.md         # Documentation
 ```
 
 ### Testing Locally
